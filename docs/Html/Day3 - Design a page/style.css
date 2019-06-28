@@ -185,6 +185,9 @@ nav div {
 }
 
 @media screen and (max-width: 600px) {
+  nav {
+    background-color: #eee;
+  }
   nav div {
     display: block;
   }
@@ -193,11 +196,27 @@ nav div {
     display: none;
     position: static;
   }
+
+  .secondlist {
+    margin-left: 0px;
+    color: black;
+  }
+
+  #subtext,
+  button,
+  #mainbody h1,
+  nav #insights {
+    display: none;
+  }
+
   li {
     margin-bottom: 1px;
   }
   ul li,
   li a {
     width: 100%;
+  }
+  #grid-item {
+    display: none;
   }
 }

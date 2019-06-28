@@ -10,8 +10,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
@@ -56,7 +54,7 @@
             <li> <a href="#"><img id="search" src="search.jpg"></a></li>
 
         </ul>
-        <p>Insights you want.<br/>
+        <p id="insights">Insights you want.<br/>
         Inspiration you need.</p>    
         <p id="subtext"> Stay on top of the latest and greatest </p>
          <button type="button"><a href="#">SUBSCRIBE</a></button>   
@@ -94,25 +92,24 @@
                          </li>
            </ul>
           </section>
-       <script type="text/javascript">
-       $("nav div").click(function() {
-         $("ul").slideToggle();
-         $("ul ul").css("display","none")
-       })
-
-       $("ul li").click(function() {
-          $("ul ul").slideUp()
-          $(this).find('ul').slideToggle()
-                 })
-        $(window).resize(function() {
-           if ($(window).width() > 768) {
-             $("ul").removeAttr('style')
-           }
-        })
-         
-       
-       </script>
-
+          <script type="text/javascript">
+            $("nav div").click(function() {
+              $("ul").slideToggle();
+              $("ul ul").css("display","none")
+            })
+     
+            $("ul li").click(function() {
+               $("ul ul").slideUp()
+               $(this).find('ul').slideToggle()
+                      })
+             $(window).resize(function() {
+                if ($(window).width() > 768) {
+                  $("ul").removeAttr('style')
+                }
+             })
+              
+            
+            </script>
 </body>
 
 </html>
