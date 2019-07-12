@@ -3,11 +3,15 @@
   margin: 0;
 }
 body {
-  background-color: aqua;
+  background-color: seashell;
 }
 #mybooks {
   text-align: center;
 }
-ol li {
-  text-align: justify;
+
+ul li {
+  background: orange;
+  padding: 1em;
+  border: #333 1px solid;
+  height: auto;
 }
