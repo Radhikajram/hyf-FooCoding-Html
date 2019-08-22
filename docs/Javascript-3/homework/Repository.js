@@ -13,11 +13,6 @@ class Repository {
    * @param {HTMLElement} container The container element in which to render the repository.
    */
   render(container) {
-    // TODO: replace the next line with your code.
-    // Util.createAndAppend('pre', container, JSON.stringify(this.repository, null, 2));
-    //console.log(container);
-    //console.log(this.repository.name);
-
     const templateElement = [];
 
     // format the date

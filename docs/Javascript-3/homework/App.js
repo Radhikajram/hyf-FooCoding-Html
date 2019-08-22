@@ -50,7 +50,6 @@ class App {
       const repos = await Util.fetchJSON(url);
 
       this.repos = repos.map(repo => new Repository(repo));
-      // TODO: add your own code here
 
       const sortRepoName = [];
       // push all the HYP repo names to sort array.
@@ -72,39 +71,24 @@ class App {
         selectBox.appendChild(option);
       });
 
-      // eslint-disable-next-line no-undef
-
-      // eslint-disable-next-line no-undef
-      // eslint-disable-next-line func-names
-      // (async function() {
-      // eslint-disable-next-line no-undef
-      //console.log(selectBox.selectedIndex);
       let keyIndex;
       console.log(selectBox.value);
       Object.keys(repos).forEach(key => {
         if (selectBox.value === repos[key].name) {
           keyIndex = key;
-          console.log(keyIndex);
-          console.log(repos[key].name);
         }
       });
       this.fetchContributorsAndRender(keyIndex);
 
-      const that = this;
-
-      selectBox
-        .addEventListener('change', () => {
-          Object.keys(repos).forEach(key => {
-            if (selectBox.value === repos[key].name) {
-              keyIndex = key;
-              console.log(keyIndex);
-              console.log(repos[key].name);
-            }
-          });
-        })
-        .bind(that.fetchContributorsAndRender(keyIndex));
+      selectBox.addEventListener('change', () => {
+        Object.keys(repos).forEach(key => {
+          if (selectBox.value === repos[key].name) {
+            keyIndex = key;
+          }
+        });
+        this.fetchContributorsAndRender(keyIndex);
+      });
     } catch (error) {
-      // console.log('error');
       this.renderError(error);
     }
   }
@@ -130,18 +114,16 @@ class App {
       const repo = this.repos[index];
       const contributors = await repo.fetchContributors();
 
-      //console.log(this.repos[1]);
-
-      // const container = document.getElementById('root');
       const container = document.getElementById('repo-details');
       App.clearContainer(container);
 
-      //const leftDiv = Util.createAndAppend('div', container);
+      const contributorContainer = document.getElementById('contributor-information');
+      App.clearContainer(contributorContainer);
+
       const leftDiv = 'repo-details';
       const rightDiv = document.getElementById('contributor-information');
 
       const contributorList = Util.createAndAppend('ul', rightDiv);
-      //Util.createAndAppend('ul', rightDiv);
 
       repo.render(leftDiv);
 
@@ -152,13 +134,13 @@ class App {
       this.renderError(error);
     }
   }
-  // fetchContributorsAndRender();
+
   /**
    * Render an error to the DOM.
    * @param {Error} error An Error object describing the1 2 error.
    */
   renderError(error) {
-    // console.log(error); // TODO: replace with your own code
+    console.log(error); // TODO: replace with your own code
   }
 }
 const HYF_REPOS_URL = 'https://api.github.com/orgs/HackYourFuture/repos?per_page=100';

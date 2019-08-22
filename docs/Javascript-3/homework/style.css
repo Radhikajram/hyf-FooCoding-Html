@@ -36,18 +36,16 @@
   width: 80%;
 }
 ul {
+
   list-style: none;
 
  }
  ul li {
    display: block;
-   margin-right: 5px;
+  padding: 10px;
    border-bottom: 1px solid #aaa;
 
 }
-/*ul li:last-child {
-  float: right;
-}*/
 
 
  /*for  Laptop */
