@@ -1,0 +1,49 @@
+ body    {
+
+
+            background-color: #ddeedd;
+
+            font-family:Oleo Script;
+
+          }
+
+
+
+ header {
+
+ 		text-align: center;
+
+ 		background-color: white;
+
+ 		}
+
+
+
+.inputData, .wrapper, .mySelect, #radiogrp{
+
+		text-align: center;
+
+}
+
+ 
+
+#addtocartSelect{
+
+	text-align: center;
+
+}
+
+select {
+
+    border: 0px;
+
+    outline: 0px;
+
+  }
+
+.cartrow {
+  text-align: center;
+}
+.cartrow label {
+  padding: 30px;
+}

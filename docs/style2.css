@@ -1,0 +1,16 @@
+header {
+  font-family: monospace;
+  color: orangered;
+}
+
+body {
+  background-color: floralwhite;
+  font-family: monospace;
+}
+
+h2 {
+  color: green;
+}
+h2 ul {
+  text-align: center;
+}

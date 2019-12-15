@@ -1,86 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>FooCoding Assignments</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
 
-  <body>
-    <header>
-      <h1>Radhika Jayaraman - Foo Coding Assignments</h1>
-      <hr />
-    </header>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div>
-      <h2>Html & Css</h2>
-      <ul>
-        <li><a href="./Html/Day01-portfolio/index.html"> Week1- Create Portfolio Page </a></li>
-        <li><a href="./Html/Day2 - flexbox-grid/index.html"> Week2 - flexbox-grid </a></li>
-        <li><a href="./Html/Day3 - Design a page"> Week3 - Design a Page </a></li>
-      </ul>
-      <h2>Javascript - 1</h2>
-      <ul>
-        <li><a href="https://github.com/Radhikajram/animals"> Week1- Git Exercise </a></li>
-        <li>
-          <a href="https://github.com/Radhikajram/hyf-javascript1/tree/master/Week2">
-            Week2- Exercise(Arrays,IF,String Fuctions)
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/Radhikajram/hyf-javascript1/tree/master/Week3">
-            Week3- Exercise(Arrays,Functions)
-          </a>
-        </li>
-      </ul>
-      <h2>Javascript - 2</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/Radhikajram/JavaScript2/tree/master/Week1/homework">
-            Week1- DOM Manipulation,Objects </a
-          ><br />
-          <a href="./Javascript-2/Week-1/index.html">Week1- My favorite books</a>
-        </li>
-        <li>
-          <a href="https://github.com/Radhikajram/JavaScript2/tree/master/Week2/homework">
-            Week2 - JSON,Map and Filters,Arrow Function
-          </a>
-        </br>
-        <a href="./Javascript-2/Week-2/index.html">Week2 - squirtle-sprites</a>
+</head>
+<body>
 
-          </li>
-        </li>
-        <li><a href="https://github.com/Radhikajram/JavaScript2/tree/week3-homework/Week3/homework"> Week3 - Callback Function,Closures </a></li>
-      </ul>
-      <h2>Javascript - 3</h2>
-      <ul>
-        <li><a href="https://github.com/Radhikajram/JavaScript3"> Github Link : Javascript3 -Topics  </a></li>
-      <li><a href="./Javascript-3/homework/index.html"> Week1- Single page Application,XMLHttpRequest,API Calls </a></li>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Radhika Jayaraman</a>
 
-        <li>
-          <a href="./Javascript-3/homework/index.html">
-            Week2 - Event Loops,Async vs Sync.
-          </a>
-        </li>
-        <li><a href="./Javascript-3/homework/index2.html"> Week3 - Try/catch,Async/wait,'this' Keyword,ES6 classes </a></li>
-      </ul>
-      <h2>Node.js</h2>
-      <ul>
-        <li><a href="https://github.com/Radhikajram/Node.js/tree/master/week1"> Week1 - REPL, Npm init,Package.json,Require modules </a></li>
-        <li><a href="https://github.com/Radhikajram/Node.js/tree/master/week1/homework">Week1- homework Link</a></li>
-        <li><a href="https://github.com/Radhikajram/Node.js/tree/master/week2"> Week2 - Node.js File system,CRUD,Command line interface (CLI) </a></li>
-        <li><a href="https://github.com/Radhikajram/Node.js/tree/master/week2/homework">Week2- homework Link</a></li>
-        <li><a href="https://github.com/Radhikajram/Node.js/tree/master/week3"> Week3 - Testing  with Postman,Express.js REST API </a></li>
-        <li><a href="https://github.com/Radhikajram/Node.js/tree/master/week3/homework">Week3- homework Link</a></li>
-      </ul>
-      <h2>Database - MySQL</h2>
-      <ul>
-        <li><a href="https://github.com/Radhikajram/databases/tree/master/Week1"> Week1 - MySQL and node setup,Create,Insert,Select of a table. </a></li>
-        <li><a href="https://github.com/Radhikajram/databases/pull/1">Week1- homework Link</a></li>
-        <li><a href="https://github.com/Radhikajram/databases/tree/master/Week2"> Week2 - Group by,Having and Joins.Promisification of JS with Prepare statement </a></li>
-        <li><a href="https://github.com/Radhikajram/databases/tree/master/Week3">Week3- Database design,Normal forms,SQL Injection</a></li>
+  <!-- Toggle button -->
+
+  <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+
+  <span class="navbar-toggler-icon my-toggle"></span>
+
+  </button>
+
+    <!-- Toggle button -->
+
+  <!-- Links -->
+  <div class="collapse navbar-collapse justify-content-between" id="nav">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">About Me</a>
+    </li>
+   
+
+    <!-- Dropdown Java -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Java
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://github.com/Radhikajram/todolist">To do Application</a>
+
+      </div>
+    </li>
+
+        <!-- Dropdown Html CSS & Bootstrap -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Html CSS & Bootstrap
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="../hyf-FooCoding-Html/docs/Html/Html-Css-Design-MovieReview/Html and Css/index.html">Design Movie Review Page </a>
+        <a class="dropdown-item" href="../hyf-FooCoding-Html/docs/Html/Day2 - flexbox-grid/index.html">Felxbox - Grid in CSS</a>
+        <a class="dropdown-item" href="../hyf-FooCoding-Html/docs/Html/Boostrap-Design-Coffee-Website/Coffee-Party/index.html">Desing Coffee Shop Website = Bootstrap</a>
+      </div>
+    </li>
+
+          <!-- Dropdown Javascript -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Javascript
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="../hyf-FooCoding-Html/docs/Javascript-3/Javascript-Bish-Bosh-application/Javascritp-Bish Bash/index2.html">Javascript Bish-Bosh game </a>
+        <a class="dropdown-item" href="../hyf-FooCoding-Html/docs/Javascript-3/Js shopping cart/index.html">Simple Shopping Cart Design</a>
+        <a class="dropdown-item" href="../hyf-FooCoding-Html/docs/Javascript-3/homework/index2.html">Single page Application - Try/catch,Async/wait,'this' Keyword,ES6 classes</a>
+      </div>
+    </li>
+
+
+              <!-- Dropdown Node.js -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Node.js
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://github.com/Radhikajram/Node.js/tree/master/week1/homework">REPL, Npm init,Package.json,Require modules </a>
+        <a class="dropdown-item" href="https://github.com/Radhikajram/Node.js/tree/master/week2/homework">Node.js File system,CRUD,Command line interface (CLI) </a>
+        <a class="dropdown-item" href="https://github.com/Radhikajram/Node.js/tree/master/week3/homework">Testing  with Postman,Express.js REST API</a>
+      </div>
+    </li>
+
+
+              <!-- Dropdown Mysql -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        MySQL
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://github.com/Radhikajram/databases/pull/1">MySQL and node setup,Create,Insert,Select of a table. </a>
+        <a class="dropdown-item" href="https://github.com/Radhikajram/databases/pull/2">Group by,Having and Joins.Promisification of JS with Prepare statement</a>
+        <a class="dropdown-item" href="https://github.com/Radhikajram/databases/pull/3">Database design,Normal forms,SQL Injection</a>
+      </div>
+    </li>
+
+
+    <!-- Dropdown C# -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        C#
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://github.com/Radhikajram/TicketRegistery">Ticket Registery </a>
+        <a class="dropdown-item" href="https://github.com/Radhikajram/Encapsulation_Example">Encapsulation Example</a>
+        <a class="dropdown-item" href="https://github.com/Radhikajram/Storage">Product Inventory - Using MVC application</a>
+      </div>
+    </li>
+
+     <!-- Contact-->
+    
+
+</nav>
+<br>
+  
+<div class="container">
+  <div class="row">
+        <h1 class="display-7" style="color: #997a00"> Currently Doing : </h1>
+    <div class="col-md-6">
+      <h3>Studying .Net Programming in Lexicon - arbetsförmedlingen </h3>
+    
     </div>
-  </body>
+   <div class="col-md-10">
+      <div class="row align-items-centre ">
+        <div class="col">
+    
+          <p class="lead text-justify"> The course duration is for 4 months and it is in Swedish. 
+            End of the course we are planning to have group project and likely to get hands on about SCRUM methodology.
+          The Course is likely to end by FEB 2020.Studying - 
+            <ul id="current">
+              <li> C# </li>
+              <li> .Net Core with MVC framework </li>
+              <li> Javascript</li>
+              <li> Boostrap,HTML,CSS</li>
+              <li> Databsse - Sqlserver</li>
+            </ul>
+          </br>
+        </p>
+
+        </div>
+  </div>
+</div>
+</div>
+</div>
+  <!--End current status -->
+
+<!--Foo Coding -->
+
+  <div class="container">
+      <div class="row">
+
+       <h1 class="display-7" style="color: #997a00" >April 2019 - Dec 2019: </h1>
+  <div class="col-md-6">
+      <h3>Full stack development - Foo coding  </h3>
+    
+    </div>
+   <div class="col-md-10">
+      <div class="row align-items-centre ">
+        <div class="col">
+    
+          <p class="lead text-justify"> Got opportunity to study about Full stack development. The course happend only on
+          Sundays. The course Assignment will be given and used Git to upload our Assignments. The assignment will be verified and
+          reviewed from the concerced mentors using GIT.
+            <ul id="current">
+              <li> Javascript </li>
+              <li> Node.js </li>
+              <li> My SQL </li>
+              <li> HTML,CSS</li>
+              <li> GIT </li>
+
+            </ul>
+          </br>
+        </p>
+
+        </div>
+  </div>
+</div>
+</div>
+</div>
+  <!-- Foo Coding -->
+ <!--Novare -->
+  <div class="container">
+          <div class="row">
+
+       <h1 class="display-7" style="color: #997a00" >JAVA and Android Programing  Sponsored by Novare Potential 
+ 
+  </h1>
+  <div class="col-md-6">
+      <h3>KTH University - 08/2018 – 12/2018  </h3>
+    
+    </div>
+   <div class="col-md-10">
+      <div class="row align-items-centre ">
+        <div class="col">
+    
+          <p class="lead text-justify"> Studied core Java, Android with Xml and Git. Developed Individual project in Java (To Do list ) as part of the course.
+            <ul id="current">
+              <li> core Java </li>
+              <li> Git </li>
+              
+            </ul>
+          </br>
+        </p>
+
+        </div>
+  </div>
+</div>
+</div>
+</div>  <!-- End Novare -->
+  
+    <!--Work Experience -->
+
+  <div class="container">
+              <div class="row">
+
+       <h1 class="display-7" style="color: #997a00" >Work Experience   </h1>
+       <br>
+  <div class="col-md-6">
+      <h3>Developer  </h3>
+    
+    </div>
+   <div class="col-md-10">
+      <div class="row align-items-centre ">
+        <div class="col">
+    
+            <ul id="current">
+              <li> 09/2004 – 01/2012  - Worked as Developer in Mainframe Technology for Indian Multination companies. </li>
+              <li> 02/2012 – 08/2017  - Took a break for parental care.  </li>
+              
+            </ul>
+          </br>
+        </p>
+
+        </div>
+  </div>
+</div>
+</div>
+</div>  <!-- Work Experience  -->
+
+ <!--Education  -->
+
+  <div class="container">
+                  <div class="row">
+
+       <h1 class="display-7" style="color: #997a00" >Education  </h1>
+       <br>
+  <div class="col-md-6">
+      <h3>Masters </h3>
+    
+    </div>
+   <div class="col-md-10">
+      <div class="row align-items-centre ">
+        <div class="col">
+              <ul id="current">
+              <li> Master of Computer Applications  </li>
+              <li> Swedish Learning - Completed ‘C’ grade in Swedish</li>
+
+            </ul>
+              
+          </br>
+        
+
+        </div>
+  </div>
+</div>
+</div>
+</div>  <!-- Work Experience  -->
+
+  <!--Footer -->
+   <div class="footer">
+   <nav class="navbar footer navbar-default navbar-fixed-bottom  bg-dark navbar-dark">
+    <div class="container text-center">
+      <p class="navbar-text col-md-12 col-sm-8 col-xs-8"> Radhika  
+        <a href="https://www.linkedin.com/in/radhika-jayaraman-64b27a146/"
+     class="btn btn-info fa fa-linkedin-square" role="button" style="font-size:24px"></a>
+        <a href="https://github.com/Radhikajram" class="btn btn-info fa fa-git-square" role="button" style="font-size:24px"></a>
+        <a href="https://mail.yahoo.com/d/compose/8688400760" class="btn btn-info fa fa-envelope" role="button" style="font-size:24px"></a>
+       </p>
+      </div>
+    </nav>
+     <!--Footer -->
+
+  </div>
+</body>
 </html>
