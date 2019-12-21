@@ -1,3 +1,6 @@
 [submodule "docs/Html/Html-Css-Design-MovieReview"]
 	path = docs/Html/Html-Css-Design-MovieReview
 	url = https://github.com/Radhikajram/Html-Css-Design-MovieReview.git
+[submodule "docs/Html/Boostrap-Design-Coffee-Website"]
+	path = docs/Html/Boostrap-Design-Coffee-Website
+	url = https://github.com/Radhikajram/Boostrap-Design-Coffee-Website.git
