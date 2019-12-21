@@ -4,3 +4,6 @@
 [submodule "docs/Html/Boostrap-Design-Coffee-Website"]
 	path = docs/Html/Boostrap-Design-Coffee-Website
 	url = https://github.com/Radhikajram/Boostrap-Design-Coffee-Website.git
+[submodule "docs/Javascript-3/Javascript-Bish-Bosh-application"]
+	path = docs/Javascript-3/Javascript-Bish-Bosh-application
+	url = https://github.com/Radhikajram/Javascript-Bish-Bosh-application.git
